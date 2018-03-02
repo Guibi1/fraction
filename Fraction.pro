@@ -17,8 +17,8 @@ SOURCES += \
 
 
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../Guibi/release/ -lGuibi
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../Guibi/debug/ -lGuibi
+win32:CONFIG(release): LIBS += -L$$PWD/../Guibi/release/ -lGuibi
+else:win32:CONFIG(debug): LIBS += -L$$PWD/../Guibi/debug/ -lGuibi
 else:unix: LIBS += -L$$PWD/../Guibi/ -lGuibi
 
 INCLUDEPATH += $$PWD/../Guibi
