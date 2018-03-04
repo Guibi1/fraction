@@ -1,7 +1,7 @@
 QT += widgets
 
 TEMPLATE = app
-TARGET = fraction
+TARGET = Fraction
 
 HEADERS += \
     fraction.h \

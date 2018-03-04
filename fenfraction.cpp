@@ -2,9 +2,11 @@
 
 FenFraction::FenFraction(QWidget *parent)
     : QMainWindow(parent),
-      push(0)
+      push(new QPushButton("texte")),
+      spin(new QSpinBox())
 {
-    push = new QPushButton("texte", this);
+    layout()->addWidget(push);
+    layout()->addWidget(spin);
 }
 
 QStringList FenFraction::getFilesList()

@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 
     // Démmare l'application
     FenFraction fen;
-    if (!demmarerApp(fen, fen.getFilesList(), "image/splash.png"))
+    if (!demmarerApp(fen, fen.getFilesList(), false))
         return -1;
 
     return app.exec();

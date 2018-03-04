@@ -3,7 +3,9 @@
 
 #include <QMainWindow>
 #include <QPushButton>
+#include <QSpinBox>
 #include <QStringList>
+#include <QLayout>
 
 class FenFraction : public QMainWindow
 {
@@ -13,6 +15,7 @@ public:
     static QStringList getFilesList();
 
     QPushButton *push;
+    QSpinBox *spin;
 };
 
 #endif // FENFRACTION_H
