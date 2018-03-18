@@ -6,13 +6,15 @@ TARGET = Fraction
 HEADERS += \
     fraction.h \
     stylefraction.h \
-    fenfraction.h
+    fenfraction.h \
+    fractiongui.h
 
 SOURCES += \
     fraction.cpp \
     main.cpp \
     stylefraction.cpp \
-    fenfraction.cpp
+    fenfraction.cpp \
+    fractiongui.cpp
 
 
 
