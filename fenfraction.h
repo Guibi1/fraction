@@ -5,7 +5,12 @@
 #include <QPushButton>
 #include <QSpinBox>
 #include <QStringList>
-#include <QLayout>
+#include <QBoxLayout>
+#include <QComboBox>
+#include <QPushButton>
+
+#include "fractiongui.h"
+#include "gbarretitre.h"
 
 class FenFraction : public QMainWindow
 {
@@ -14,8 +19,22 @@ public:
 
     static QStringList getFilesList();
 
-    QPushButton *push;
-    QSpinBox *spin;
+
+private:
+    // GUI principal
+    QWidget *widgetLayoutCentral;
+    QVBoxLayout *layoutVPincipal;
+    QBoxLayout *layoutFraction;
+    GBarreTitre *barreTitre;
+
+    // FractionGuis
+    FractionGui *fractionUn;
+    FractionGui *fractionDeux;
+    FractionGui *fractionReduire;
+    FractionGui *fractionReponse;
+
+    QComboBox *comboOperateur;
+    QPushButton *pushCalculer;
 };
 
 #endif // FENFRACTION_H
