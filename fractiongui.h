@@ -1,13 +1,15 @@
 #ifndef FRACTIONGUI_H
 #define FRACTIONGUI_H
 
-#include <QGroupBox>
+#include <QWidget>
+#include <QFrame>
+#include <QBoxLayout>
 #include <QSpinBox>
 
 #include "fraction.h"
 
 
-class FractionGui : public Fraction, QGroupBox
+class FractionGui : public QWidget, Fraction
 {
      Q_OBJECT
 
@@ -23,6 +25,8 @@ public slots:
 
 
 private:
+    QBoxLayout *layoutPrincipal;
+
     QSpinBox *spinNum;
     QSpinBox *spinDeno;
 };

@@ -2,15 +2,25 @@
 
 FractionGui::FractionGui(QWidget *parent)
 {
-    FractionGui(&Fraction(0, 0), parent);
+    FractionGui(Fraction(0, 0), parent);
 }
 
 FractionGui::FractionGui(Fraction const& fraction, QWidget *parent) :
-    QGroupBox(parent()),
+    QWidget(parent),
+    layoutPrincipal(new QBoxLayout(QBoxLayout::LeftToRight, this)),
     spinNum(new QSpinBox),
     spinDeno(new QSpinBox)
 {
     setFraction(fraction);
+
+    // GUI
+    QFrame ligne;
+        ligne.setFrameShadow(QFrame::Sunken);
+        ligne.setLineWidth(1);
+
+    layoutPrincipal->addWidget(spinNum);
+        layoutPrincipal->addWidget(&ligne);
+        layoutPrincipal->addWidget(spinDeno);
 }
 
 /// -*-*- SETs/GETs -*-*-

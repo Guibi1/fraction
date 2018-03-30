@@ -25,3 +25,4 @@ else:unix: LIBS += -L$$PWD/../Guibi/ -lGuibi
 
 INCLUDEPATH += $$PWD/../Guibi
 DEPENDPATH += $$PWD/../Guibi
+
