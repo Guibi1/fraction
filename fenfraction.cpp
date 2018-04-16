@@ -25,8 +25,8 @@ FenFraction::FenFraction(QWidget *parent)
         layoutFraction->addWidget(comboOperateur);
         layoutFraction->addWidget(fractionDeux);
 
-    layoutVPincipal->addWidget(barreTitre, 0, Qt::AlignTop);
-        layoutVPincipal->setContentsMargins(11, 0, 11, 11);
+    layoutVPincipal->setContentsMargins(11, 0, 11, 11);
+        layoutVPincipal->addWidget(barreTitre, 0, Qt::AlignTop);
         layoutVPincipal->addLayout(layoutFraction);
         layoutVPincipal->addWidget(pushCalculer, 0, Qt::AlignCenter);
         layoutVPincipal->addWidget(fractionReponse, 0, Qt::AlignBaseline);
